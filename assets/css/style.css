@@ -1,0 +1,420 @@
+
+.btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #650360;
+  border-color: #650360;
+}
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th {
+  border-top: 0 solid #fff;
+  line-height: 1.42857;
+  padding: 8px;
+  vertical-align: top;
+}
+
+input[type="text"], input[type="password"] {
+  display: block;
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #3890c0;
+}
+
+body {
+  font: 14px/1 'Roboto', regular;
+  color: #555;
+  background: #fff;
+}
+
+p {
+  font-size: 16px;
+  margin: 0 0 20px;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+
+h1 {
+  color: #650360;
+  font: 48px Roboto;
+  font-weight: 200;
+}
+
+h3 {
+  color: #3890c0;
+  font: 16pt 'Roboto', Bold;
+}
+
+h4 {
+	font: 16pt 'Roboto', Bold;
+}
+
+span {
+  color: #650360;
+}
+
+.margin {
+  margin-bottom: 45px;
+}
+
+.bg-1 {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+.bg-2 {
+  background-color: #474e5d;
+  color: #fff;
+}
+
+.bg-3 {
+  background-color: #fff;
+  color: #555;
+}
+
+.bg-4 {
+  background-color: #e7e8ea;
+  color: #fff;
+}
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  background-color: #3890c0;
+  font: 16px Roboto, Regular;
+}
+
+.navbar-toggle {
+  background-color: #fff;
+}
+
+.navbar-brand {
+  padding: 7px;
+}
+
+#currentpageheader {
+  color: #fff !important;
+  background-color: #0e6997 !important;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 10px 16px;
+}
+
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 0;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #650360;
+  border-color: #650360;
+}
+
+main {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 25px;
+  margin: 50px auto;
+  background: #fff;
+}
+
+section {
+  display: none;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  background: #f5f5f5;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  color: #555;
+  border: 1px solid #f5f5f5;
+  border-top: 10px solid #f5f5f5;
+  border-bottom: 0 solid #f5f5f5;
+  background: #f5f5f5;
+  border-width: 15px 1px 1px;
+  font: 18px Roboto;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #3890c0;
+  border: 1px solid transparent;
+  background: #bcd8c4;
+  font: 18px Roboto;
+}
+
+label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+.contentmain {
+  margin-top: 60px;
+}
+
+.contentside {
+  margin-top: 40px;
+}
+
+.conterntlist {
+  font-size: 16px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.withbackground {
+  margin-top: 25px;
+  height: auto;
+  background: #bcd8c4;
+}
+
+.amazingcontent {
+  margin-left: 10px;
+}
+
+.imgcontent {
+  position: absolute;
+  top: 280px;
+  right: 10px;
+}
+
+@media (max-width: 979px) {
+  .imgcontent {
+    display: none;
+  }
+  .footermenu {
+    display: none;
+  }
+}
+
+table {
+  margin-top: 40px;
+}
+
+table.table-striped td.numbers {
+  text-align: right;
+}
+
+table.table-striped th.numbers {
+  text-align: right;
+}
+
+.table > thead > tr > th {
+  border-bottom: 0 solid #fff;
+  vertical-align: bottom;
+}
+
+.firstline {
+  background-color: #fff;
+  font: 12px Roboto, Regular;
+  text-align: right;
+}
+
+.tablefirstline {
+  background-color: #eef5ee;
+  font: 18px Roboto;
+  font-weight: bold;
+}
+
+.container-fluid {
+  margin-top: 70px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.footermenu {
+  margin-top: 10px;
+  font: 16px Roboto;
+}
+
+.footermenu ul li {
+  display: inline;
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+#overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #999;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 100;
+}
+
+#popup {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background: #fff;
+  width: 455px;
+  height: 275px;
+  margin-left: -100px;
+  margin-top: -100px;
+  z-index: 200;
+}
+
+#popupclose {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popupcontent {
+  padding: 10px;
+}
+
+#button {
+  cursor: pointer;
+}
+
+.popupheading {
+  font: 24pt Roboto;
+  font-weight: 200;
+  margin-left: 10px;
+}
+
+.input-w .textfeildheadeing {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #555;
+  font: 13pt Roboto;
+  font-weight: 300;
+  color: #666;
+}
+
+.input-w input {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.screen {
+  position: relative;
+}
+
+.innerdiv {
+  position: absolute;
+  bottom: -40px;
+  right: 30px;
+  width: 35%;
+}
+
+@media only screen and (max-width: 600px) {
+  #popup {
+    width: 100%;
+  }
+}
+
+.navbar-nav li a:hover {
+  color: #fff !important;
+  background-color: #0e6997 !important;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav li a:focus {
+  color: #fff !important;
+  background-color: #0e6997 !important;
+  font-weight: bold;
+}
+
+input:checked + label {
+	font-family:Roboto;
+}
+
+label {
+	font-family:Roboto;
+}
+
+#tab1:checked ~ #content1 {	
+  display: block;
+}
+
+#tab2:checked ~ #content2 {
+  display: block;
+}
+
+.rate p {
+  margin-top: 50px;
+  font: 26pt Roboto;
+  font-weight: lighter;
+}
+
+.rate p span {
+  font: Roboto, sans-serif;
+  font-weight: bolder;
+  color: #555;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td {
+  background-color: #deebe1;
+  font: 18px Roboto;
+  font-weight: lighter;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #deebe1;
+  font: 18px Roboto;
+  font-weight: lighter;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td {
+  background-color: #eef5ee;
+  font: 18px Roboto;
+  font-weight: lighter;
+}
+
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #eef5ee;
+  font: 18px Roboto;
+  font-weight: lighter;
+}

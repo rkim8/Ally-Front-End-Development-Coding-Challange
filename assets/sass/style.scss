@@ -1,0 +1,425 @@
+//colors
+$color_fuscous_gray_approx: #555;
+$white: #fff;
+$color_boston_blue_approx: #3890c0;
+$color_pompadour_approx: #650360;
+$color_mountain_meadow_approx: #1abc9c;
+$color_trout_approx: #474e5d;
+$color_gray_nurse_approx: #e7e8ea;
+$color_bahama_blue_approx: #0e6997;
+$color_alto_approx: #ddd;
+$color_wild_sand_approx: #f5f5f5;
+$color_surf_approx: #bcd8c4;
+$color_suva_gray_approx: #888;
+$color_willow_brook_approx: #deebe1;
+$color_panache_approx: #eef5ee;
+$color_mountain_mist_approx: #999;
+$color_storm_dust_approx: #666;
+
+//fonts
+$font_0: Roboto;
+$font_1: Bold;
+$font_2: Regular;
+
+//@extend-elements
+//original selectors
+//.btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary
+%extend_1 {
+	color: $white;
+	background-color: $color_pompadour_approx;
+	border-color: $color_pompadour_approx;
+}
+
+//original selectors
+//.table >tbody >tr >td, .table >tbody >tr >th, .table >tfoot >tr >td, .table >tfoot >tr >th, .table >thead >tr >td, .table >thead >tr >th
+%extend_2 {
+	border-top: 0 solid $white;
+	line-height: 1.42857;
+	padding: 8px;
+	vertical-align: top;
+}
+
+//original selectors
+//input[type="text"], input[type="password"]
+%extend_3 {
+	display: block;
+	width: 70%;
+	padding: 10px;
+	border: 1px solid $color_boston_blue_approx;
+}
+
+
+body {
+	font: 14px/1 'Helvetica Neue', regular;
+	color: $color_fuscous_gray_approx;
+	background: $white;
+}
+p {
+	font-size: 16px;
+	margin: 0 0 20px;
+	line-height: 1.5;
+	a {
+		text-decoration: underline;
+	}
+}
+h3 {
+	color: $color_boston_blue_approx;
+	font: 16pt $font_0, $font_1;
+}
+h1 {
+	color: $color_pompadour_approx;
+	font: 48px $font_0;
+	font-weight: 200;
+}
+span {
+	color: $color_pompadour_approx;
+}
+.margin {
+	margin-bottom: 45px;
+}
+.bg-1 {
+	background-color: $color_mountain_meadow_approx;
+	color: $white;
+}
+.bg-2 {
+	background-color: $color_trout_approx;
+	color: $white;
+}
+.bg-3 {
+	background-color: $white;
+	color: $color_fuscous_gray_approx;
+}
+.bg-4 {
+	background-color: $color_gray_nurse_approx;
+	color: $white;
+}
+.navbar {
+	padding-top: 0;
+	padding-bottom: 0;
+	border: 0;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 12px;
+	background-color: $color_boston_blue_approx;
+	font: 16px $font_0, $font_2;
+}
+.navbar-toggle {
+	background-color: $white;
+}
+.navbar-brand {
+	padding: 7px;
+}
+#currentpageheader {
+	color: $white !important;
+	background-color: $color_bahama_blue_approx !important;
+	font-weight: bold;
+}
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	//Instead of the line below you could use @include user-select($select)
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	padding: 10px 16px;
+}
+.btn-lg {
+	font-size: 18px;
+	line-height: 1.33;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+}
+.btn-primary {
+	color: $white;
+	background-color: $color_pompadour_approx;
+	border-color: $color_pompadour_approx;
+	&:focus {
+		@extend %extend_1;
+	}
+	&:active {
+		@extend %extend_1;
+	}
+	&.active {
+		@extend %extend_1;
+	}
+}
+main {
+	min-width: 320px;
+	max-width: 800px;
+	padding: 25px;
+	margin: 50px auto;
+	background: $white;
+}
+section {
+	display: none;
+	padding: 20px;
+	border-top: 1px solid $color_alto_approx;
+	background: $color_wild_sand_approx;
+}
+input {
+	display: none;
+	&:checked + label {
+		color: $color_fuscous_gray_approx;
+		border: 1px solid $color_wild_sand_approx;
+		border-top: 10px solid $color_wild_sand_approx;
+		border-bottom: 0 solid $color_wild_sand_approx;
+		background: $color_wild_sand_approx;
+		border-width: 15px 1px 1px;
+		font: 18px $font_0;
+	}
+}
+label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 25px;
+	font-weight: 600;
+	text-align: center;
+	color: $color_boston_blue_approx;
+	border: 1px solid transparent;
+	background: $color_surf_approx;
+	font: 18px $font_0;
+	&:hover {
+		color: $color_suva_gray_approx;
+		cursor: pointer;
+	}
+}
+.contentmain {
+	margin-top: 60px;
+}
+.contentside {
+	margin-top: 40px;
+}
+.conterntlist {
+	font-size: 16px;
+	margin: 0 auto;
+	line-height: 1.5;
+	font-weight: 300;
+}
+.withbackground {
+	margin-top: 25px;
+	height: auto;
+	background: $color_surf_approx;
+}
+.amazingcontent {
+	margin-left: 10px;
+}
+.imgcontent {
+	position: absolute;
+	top: 280px;
+	right: 10px;
+}
+@media(max-width: 979px) {
+	.imgcontent {
+		display: none;
+	}
+	.footermenu {
+		display: none;
+	}
+}
+table {
+	margin-top: 40px;
+	&.table-striped {
+		td.numbers {
+			text-align: right;
+		}
+		th.numbers {
+			text-align: right;
+		}
+	}
+}
+.table {
+	> thead > tr {
+		> th {
+			border-bottom: 0 solid $white;
+			vertical-align: bottom;
+			@extend %extend_2;
+		}
+		> td {
+			@extend %extend_2;
+		}
+	}
+	> tbody > tr {
+		> td {
+			@extend %extend_2;
+		}
+		> th {
+			@extend %extend_2;
+		}
+	}
+	> tfoot > tr {
+		> td {
+			@extend %extend_2;
+		}
+		> th {
+			@extend %extend_2;
+		}
+	}
+}
+.firstline {
+	background-color: $white;
+	font: 12px $font_0, $font_2;
+	text-align: right;
+}
+.tablefirstline {
+	background-color: $color_panache_approx;
+	font: 18px $font_0, $font_2;
+	font-weight: bold;
+}
+.container-fluid {
+	margin-top: 70px;
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+.footermenu {
+	margin-top: 10px;
+	font: 16px $font_0, $font_2;
+	ul li {
+		display: inline;
+		padding-left: 2em;
+		text-indent: -2em;
+	}
+}
+.selected {
+	font-weight: bold;
+}
+#overlay {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: $color_mountain_mist_approx;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	z-index: 100;
+}
+#popup {
+	display: none;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	background: $white;
+	width: 455px;
+	height: 275px;
+	margin-left: -100px;
+	margin-top: -100px;
+	z-index: 200;
+}
+#popupclose {
+	float: right;
+	padding: 10px;
+	cursor: pointer;
+}
+.popupcontent {
+	padding: 10px;
+}
+#button {
+	cursor: pointer;
+}
+.popupheading {
+	font: 24pt $font_0;
+	font-weight: 200;
+	margin-left: 10px;
+}
+input[type="text"] {
+	@extend %extend_3;
+}
+input[type="password"] {
+	@extend %extend_3;
+}
+.input-w {
+	.textfeildheadeing {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+		margin-top: 10px;
+		color: $color_fuscous_gray_approx;
+		font: 13pt $font_0;
+		font-weight: 300;
+		color: $color_storm_dust_approx;
+	}
+	input {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 15px;
+		margin-top: 10px;
+	}
+}
+.screen {
+	position: relative;
+}
+.innerdiv {
+	position: absolute;
+	bottom: -40px;
+	right: 30px;
+	width: 35%;
+}
+@media only screen and(max-width: 600px) {
+	#popup {
+		width: 100%;
+	}
+}
+.navbar-nav li a:hover {
+	color: $white !important;
+	background-color: $color_bahama_blue_approx !important;
+	font-weight: bold;
+}
+.navbar-default .navbar-nav li a {
+	color: $white;
+	&:focus {
+		color: $white !important;
+		background-color: $color_bahama_blue_approx !important;
+		font-weight: bold;
+	}
+}
+.open .dropdown-toggle.btn-primary {
+	@extend %extend_1;
+}
+#tab1:checked ~ #content1 {
+	display: block;
+}
+#tab2:checked ~ #content2 {
+	display: block;
+}
+.rate p {
+	margin-top: 50px;
+	font: 26pt $font_0;
+	font-weight: lighter;
+	span {
+		font-weight: bolder;
+		color: $color_fuscous_gray_approx;
+	}
+}
+.table-striped > tbody > tr {
+	&:nth-child(odd) {
+		> td {
+			background-color: $color_willow_brook_approx;
+			font: 18px $font_0, $font_2;
+		}
+		> th {
+			background-color: $color_willow_brook_approx;
+			font: 18px $font_0, $font_2;
+		}
+	}
+	&:nth-child(even) {
+		> td {
+			background-color: $color_panache_approx;
+			font: 18px $font_0, $font_2;
+		}
+		> th {
+			background-color: $color_panache_approx;
+			font: 18px $font_0, $font_2;
+		}
+	}
+}
